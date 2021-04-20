@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Community Watch</string>
+    <string name="map_api" translatable="false">AIzaSyBtrExvxn3hWUh0Vzp77AO5yGzRMjVTYzI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

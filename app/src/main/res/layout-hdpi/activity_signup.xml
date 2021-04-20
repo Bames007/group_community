@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_context"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_bg"
+    tools:context=".ui.signup">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardholder"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <frlgrd.animatededittext.AnimatedEditText
+                android:id="@+id/fname"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:editTextIcon="@drawable/user"
+                app:editTextInputType="name"
+                app:hintText="First Name" />
+
+            <frlgrd.animatededittext.AnimatedEditText
+                android:id="@+id/lname"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:editTextIcon="@drawable/user"
+                app:editTextInputType="name"
+                app:hintText="Last Name" />
+
+
+            <frlgrd.animatededittext.AnimatedEditText
+                android:id="@+id/email_signup"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:editTextIcon="@drawable/email"
+                app:editTextInputType="name"
+                app:hintText="Email" />
+
+            <frlgrd.animatededittext.AnimatedEditText
+                android:id="@+id/phone_signup"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:editTextIcon="@drawable/phone"
+                app:editTextInputType="phone"
+                app:hintText="Phone" />
+
+
+            <frlgrd.animatededittext.AnimatedEditText
+                android:id="@+id/password_signup"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:editTextIcon="@drawable/lock"
+                app:editTextInputType="password"
+                app:hintText="Password" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/create"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/cardholder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:elevation="6dp"
+        app:animation_duration="300"
+        app:area_margin="7dp"
+        app:border_radius="40dp"
+        app:bump_vibration="60"
+        app:complete_icon="@drawable/check"
+        app:inner_color="@color/colorPrimaryDark"
+        app:outer_color="@color/colorPrimary"
+        app:rotate_icon="true"
+        app:slider_icon="@drawable/slide_right"
+        app:slider_locked="false"
+        app:text="Create Profile"
+        app:text_size="15sp" />
+
+
+    <TextView
+        android:id="@+id/login_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:textColor="#6F850000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
